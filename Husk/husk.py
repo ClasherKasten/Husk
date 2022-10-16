@@ -4,7 +4,6 @@
 
 import os, subprocess
 
-
 def execute_command(command):
     """execute commands and handle piping"""
     try:

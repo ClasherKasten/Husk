@@ -1,0 +1,8 @@
+TO DO:
+
+1)Retrieve the user password from "CredFile.ini:
+2)create a function to allow the user password to be required before entering Husk
+3)get local package husk install to work
+4)add error codes
+5)add feature where shell saves users username across different sessions
+6)add feature where shell saves users password across different sessions
