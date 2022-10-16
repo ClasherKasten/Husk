@@ -1,4 +1,4 @@
-#VERSION:0.1.0
+#VERSION:0.1.1
 #AUTHOR: Marshall Burns a.k.a Schooly B
 #Husk: A simple shell written in Python
 
@@ -66,6 +66,8 @@ def Husk_help():
     ls to list files
     rm to remove a file/directory
     """)
+
+
 
 def main():
     while True:
