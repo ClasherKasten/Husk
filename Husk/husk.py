@@ -2,7 +2,10 @@
 #AUTHOR: Marshall Burns a.k.a Schooly B
 #Husk: A simple shell written in Python
 
-import os, subprocess
+import os, subprocess, readchar
+from readchar import readkey, key
+
+
 
 def execute_command(command):
     """execute commands and handle piping"""
@@ -66,11 +69,20 @@ def Husk_help():
     rm to remove a file/directory
     """)
 
-
-
 def main():
     while True:
-        inp = input("$Husk>>> ")
+        inp = input(os.getcwd() + " $Husk>>> ")
+
+        keyPressed = readchar.readkey()
+        while True:
+            k = readkey()
+            if k == key.UP: 
+                print('hello')
+            break
+
+        inputHistory = open('input-history.txt','a')
+        inputHistory.write(inp + '\n')
+        inputHistory.close()
         if inp == "exit":
             break
         elif inp[:3] == "cd ":

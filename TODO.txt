@@ -1,8 +1,19 @@
-TO DO:
+###!!!URGENT TO DOs:###
+1)debug user key input function(possibly put delete lines 76-81/ somehow
+use 'inp' funtion for 'readchar.readkey()' )
 
+###MINOR TO DOS:###
 1)Retrieve the user password from "CredFile.ini:
 2)create a function to allow the user password to be required before entering Husk
 3)get local package husk install to work
 4)add error codes
 5)add feature where shell saves users username across different sessions
 6)add feature where shell saves users password across different sessions
+7)add a way to view current path/directory user is in ###COMPLETED Oct 17th 2022###
+8)add feature that allows the command 'bk' to take the user back to last location(directory) 
+9)add feature that allows the command '-bk' to take the user back to ~ directory
+10)make it so that within Husk the 'cd' command actually changes directories
+11)make a file that will store users last accessed directory loaction
+12)make a file that will store commands previously entered by user ###COMPLETED Oct 17th 2022###
+13)add a feature that allows Husk to call back to previously entered data from the input-history.txt file 
+14)add feature that takes users key inputs and returns them back into husk
