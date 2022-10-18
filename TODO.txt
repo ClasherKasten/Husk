@@ -1,21 +1,18 @@
 ###!!!URGENT TO DOs:###
 USER AUTHENTIFICATION
-0)make a feature that asks for iniital username and password setup. encrypt that data and store in a txt file
-1)Retrieve the user password from "CredFile.ini:
-2)create a function to allow the user password to be required before entering Husk and before app installation
-3)add feature where shell saves users username across different sessions
-4)add feature where shell saves users password across different sessions
-5)add feature that preforms a check to see if users entered password mat
+1)add a feature that requests the logged in os users password before app installtion
+2)access file that stores OS user passwords
+3)retrieve password
 
 ###MINOR TO DOS:###
-4)add error codes
-8)add feature that allows the command 'bk' to take the user back to last location(directory) 
-9)add feature that allows the command '-bk' to take the user back to ~ directory
-10)make it so that within Husk the 'cd' command actually changes directories
-11)make a file that will store users last accessed directory loaction
-12)go through every file and add comments explaining things
-13)add code examples to README.md
-
+1)add error codes
+2)add feature that allows the command 'bk' to take the user back to last location(directory) 
+3)add feature that allows the command '-bk' to take the user back to ~ directory
+4)make it so that within Husk the 'cd' command actually changes directories
+5)make a file that will store users last accessed directory loaction
+6)go through every file and add comments explaining things
+7)add code examples to README.md
+8)add a feature that requests confirmation before user deletes a file
 
 ###COMPLETED###
 1)make a file that will store commands previously entered by user ###COMPLETED Oct 17th 2022###
