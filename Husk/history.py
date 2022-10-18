@@ -1,7 +1,7 @@
 import os
 import contextlib
 
-from Husk import user_data
+from Husk import user_data, husk
 
 
 @contextlib.contextmanager
@@ -10,6 +10,9 @@ def History(*history_file_path):
         raise ValueError('length of `history_file_path` can\'t be 0.')
 
     os.makedirs(user_data.xdg_data(), exist_ok=True)
+
+    inputHistory = open(user_data.xdg_data(*history_file_path), 'a')
+    inputHistory.close()
 
     with open(user_data.xdg_data(*history_file_path), 'r') as f:
         data = list(
@@ -23,3 +26,8 @@ def History(*history_file_path):
     finally:
         with open(user_data.xdg_data(*history_file_path), 'w') as f:
             f.write('\n'.join(data) + '\n')
+
+
+
+
+
