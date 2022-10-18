@@ -1,4 +1,4 @@
-#VERSION:0.1.1
+#VERSION:0.0.3
 #AUTHOR: Marshall Burns a.k.a Schooly B
 #Husk: A simple shell written in Python
 
@@ -72,14 +72,6 @@ def Husk_help():
 def main():
     while True:
         inp = input(os.getcwd() + " $Husk>>> ")
-
-        keyPressed = readchar.readkey()
-        while True:
-            k = readkey()
-            if k == key.UP: 
-                print('hello')
-            break
-
         inputHistory = open('input-history.txt','a')
         inputHistory.write(inp + '\n')
         inputHistory.close()
@@ -91,9 +83,15 @@ def main():
             Husk_help()
         else:
             execute_command(inp)
+        break
+    key = readchar.readkey()
+    while True:
+        k = readkey()
+        if k == DOWN:
+            with open('input-history.txt', 'r') as i:
+                print(i.readline()[-1]) 
 
-
-
+        
 
 if '__main__' == __name__:
     main()
