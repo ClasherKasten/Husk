@@ -10,6 +10,10 @@ setup(
             'husk=Husk.husk:main'
         ]
     },
-    packages=find_packages()
+    packages=find_packages(),
+    install_requires=[
+        'readchar'
+    ],
+    python_requires='>=3.8'
 )
 
