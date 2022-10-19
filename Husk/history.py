@@ -1,7 +1,7 @@
+
 import os
 import contextlib
-
-from Husk import user_data, husk
+from Husk import user_data
 
 
 @contextlib.contextmanager
@@ -11,8 +11,8 @@ def History(*history_file_path):
 
     os.makedirs(user_data.xdg_data(), exist_ok=True)
 
-    inputHistory = open(user_data.xdg_data(*history_file_path), 'a')
-    inputHistory.close()
+    filePath= open(user_data.xdg_data(*history_file_path), 'a')
+    filePath.close()
 
     with open(user_data.xdg_data(*history_file_path), 'r') as f:
         data = list(
