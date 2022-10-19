@@ -117,6 +117,10 @@ def husk_input(history_data):
             cursor_pos = len(command)
             print(command, end='', flush=True)
             continue
+        elif key == '\t':
+            cursor_pos += 4
+            key = key.expandtabs(4)
+            command += '    '
         else:
             cursor_pos += 1
             command += key
