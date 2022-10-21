@@ -1,8 +1,11 @@
 ###!!!URGENT TO DOs:###
+GUI
+1)make Husk terminal window functional 
+
 USER AUTHENTIFICATION
 1)add a feature that requests the logged in os users password before app installtion
 2)access file that stores OS user passwords
-3)retrieve password
+3)retrieve passwords
 
 ###MINOR TO DOS:###
 1)add error codes
