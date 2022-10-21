@@ -1,6 +1,7 @@
 ###!!!URGENT TO DOs:###
 GUI
-1)make Husk terminal window functional 
+1)modify 'tkterminal' to allow 'Husk' to be used within it 
+2)make Husk terminal window functional 
 
 USER AUTHENTIFICATION
 1)add a feature that requests the logged in os users password before app installtion

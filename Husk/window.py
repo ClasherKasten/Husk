@@ -1,36 +1,33 @@
 from tkinter import *
-from tkinter import messagebox as mb
+import os
+from husk import main
+class Window(Frame):
+    def __init__(self, master=None):
+        Frame.__init__(self, master)
+        self.master = master
 
-def openMainWindow():
+        menu = Menu(self.master)
+        self.master.config(menu=menu)
 
-  window = Tk()
+        fileMenu = Menu(menu)
+        fileMenu.add_command(label="Item")
+        fileMenu.add_command(label="Exit", command=self.exitProgram)
+        menu.add_cascade(label="File", menu=fileMenu)
 
-  window.title = 'Husk version 0.3.1'
-  window.geometry('500x500')
-  window.configure(bg='black')
-  window.mainloop()
+        editMenu = Menu(menu)
+        editMenu.add_command(label="Undo")
+        editMenu.add_command(label="Redo")
+        menu.add_cascade(label="Edit", menu=editMenu)
+
+    def exitProgram(self):
+        exit()
+        
+root = Tk()
+app = Window(root)
+root.wm_title("Husk Terminal")
 
 
-def setupPassWindow():
-###ADD TOP LEVEL ROOT FOR THIS WINDOW###
-  passWindow = Tk()
 
-  passWindow.title = 'Set up password?'
-  passWindow.geometry('100x100')
-  passWindow.configure(bg='black')
-  mb.askquestion("askquestion", "Are you sure?")
-
-  passWindow.mainloop()
-  
-
-###WINDOW TO OPEN USER AUTHNENTIFICATION PROMPT###
-def openPassWindow():
-  window = Tk()
-  window.title = 'Authentification'
-  window.geometry('200x200')
-  window.configure(bg='black')
-  window.mainloop()
-  m
-###TESTING WINDOW FUNCTION###
-openMainWindow()
-setupPassWindow()
+###THIS IS THE CALL TO OPEN WINDOW###
+root.mainloop()
+main()
