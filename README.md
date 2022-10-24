@@ -5,3 +5,6 @@ Husk is a simple Linux OS based Shell written entirely in Python.
 
 # Current features:
 History logging and callbacks
+fully functional list of traditional terminal commands
+currently works in within all Linux termainals
+
