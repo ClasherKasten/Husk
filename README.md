@@ -8,5 +8,5 @@
 <ul>
 <li>History logging and callbacks</li>
 <li>fully functional list of traditional terminal commands</li>
-<li>currently works in within all Linux termainals</li>
+<li>currently works within all Linux termainals</li>
 </ul>
