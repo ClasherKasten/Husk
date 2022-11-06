@@ -1,9 +1,4 @@
-#VERSION:0.1.0
-#AUTHOR: Marshall Burns a.k.a Schooly B
-#Husk: A simple shell written in Python
-
 import os, subprocess, readchar
-
 from Husk import history
 
 
@@ -39,7 +34,7 @@ def execute_command(command):
                 try:
                     subprocess.run(cmd.strip().split())
                 except Exception:
-                    print("psh: command not found: {}".format(cmd.strip()))
+                    print("Husk: command not found: {}".format(cmd.strip()))
 
             # restore stdout and stdin
             os.dup2(s_in, 0)
@@ -53,7 +48,7 @@ def execute_command(command):
 
 
 def husk_input(history_data):
-    print(f'{os.getcwd()} $Husk>>>', end=' ', flush=True)
+    print(f'{os.getcwd()} $Husk>', end=' ', flush=True)
     command = ''
     cursor_pos = 0
     history_pos = len(history_data)
@@ -128,7 +123,6 @@ def husk_input(history_data):
     print()
     return command
 
-
 def Husk_cd(path):
     """convert to absolute path and change directory"""
     try:
@@ -138,14 +132,32 @@ def Husk_cd(path):
 
 
 def Husk_help():
-    print("Husk: shell written in Python. use the '-h' command for help")
-    print("""You can use the following commands within Husk:
+    print("Husk: A shell written entirely in Python. use the '-h' command to open the help menu")
+    print("""Please note that traditional Shell commands apply within Husk. Try to git add, git commit, git push :)
     
-    -h for help
-    ls to list files
-    rm to remove a file/directory
-    """)
+    version: 1.0.0
+    
+    Author: 
+    SchoolyB on GitHub
+    
+    Contributors:
+    ClasherKasten on GitHub
+    
+    Standard Husk Commands:
+    Enter '-h' to enter the help menu
+    Enter 'clear' to clean up a cluttered terminal 
+    Enter 'exit' to exit Husk
+    Enter 'husk' to launch an instance of Husk
+    Enter 'pwd' to print your working directory to the CLI   
+    Enter 'ls' to list files in you current working directory
+    Enter 'rm' followed by the name of a file in the current working directory to delete it
+    Enter 'mv' followed by the name of file(s) or directory(s) you would like to move. Then add the name of the directory you would like to move the specified items into
+    Enter 'mkdir' followed by a name to create a directory with that name  
+    Enter 'cd ..' to go one directory higher 
+    Enter 'cd' followed by the name of a directory to enter that directory as your new working directory """)
 
+
+###main function##
 def main():
     with history.History('.husk-history') as history_data:
         while True:

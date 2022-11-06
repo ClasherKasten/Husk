@@ -1,15 +1,17 @@
 URGENT TODO:
 1)build ui in c/c++
 
+
 MINOR TODO:
 1)add error codes 
-2)add feature that allows the command 'bk' to take the user back to last location(directory) 
-3)add feature that allows the command '-bk' to take the user back to ~ directory
-4)make it so that within Husk the 'cd' command actually changes directories
-5)make a file that will store users last accessed directory location
-6)go through every file and add comments explaining things
-7)add code examples to README.md
-8)add a feature that requests confirmation before user deletes a file
+2)make it so that within Husk the 'cd' command actually changes directories. currently 'cd' command alone does nothing
+3)make a file that will store users last accessed directory location
+4)go through every file and add comments explaining things
+5)add code examples to README.md
+6)add a feature that requests confirmation before user deletes a file
+7)fix bug that deletes words from the command line when cycling through history
+8)add 'history' command that prints all users history within terminal
+
 
 COMPLETED TODO:
 1)make a file that will store commands previously entered by user ###COMPLETED Oct 17th 2022###
