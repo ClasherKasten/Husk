@@ -2,8 +2,7 @@
 # Husk
 ## Husk is a simple Linux OS based Shell written entirely in Python.
 
-![Logo](https://github.com/SchoolyB/Husk/blob/master/HuskTransparent.png)
-
+![Logo](assets/HuskTransparent.png)
 # Current features:
 <ul>
 <li>History logging and callbacks</li>

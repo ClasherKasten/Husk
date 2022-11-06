@@ -1,28 +1,21 @@
-###!!!URGENT TO DOs:###
-GUI
-1)modify 'tkterminal' to allow 'Husk' to be used within it 
-2)make Husk terminal window functional 
+URGENT TODO:
+1)build ui in c/c++
 
-USER AUTHENTIFICATION
-1)add a feature that requests the logged in os users password before app installtion
-2)access file that stores OS user passwords
-3)retrieve passwords
-
-###MINOR TO DOS:###
-1)add error codes
+MINOR TODO:
+1)add error codes 
 2)add feature that allows the command 'bk' to take the user back to last location(directory) 
 3)add feature that allows the command '-bk' to take the user back to ~ directory
 4)make it so that within Husk the 'cd' command actually changes directories
-5)make a file that will store users last accessed directory loaction
+5)make a file that will store users last accessed directory location
 6)go through every file and add comments explaining things
 7)add code examples to README.md
 8)add a feature that requests confirmation before user deletes a file
 
-###COMPLETED###
+COMPLETED TODO:
 1)make a file that will store commands previously entered by user ###COMPLETED Oct 17th 2022###
 2)add a way to view current path/directory user is in ###COMPLETED Oct 17th 2022###
 3)debug user key input function(possibly put delete lines 76-81/ somehow
-use 'inp' funtion for 'readchar.readkey()' ) ###COMPLETED Oct 18th###
+use 'inp' function for 'readchar.readkey()' ) ###COMPLETED Oct 18th###
 4)get local package husk install to work ###COMPLETED Oct 17th 2022###
 5)add feature that takes users key inputs and returns them back into husk ###COMPLETED Oct 18th 2022###
 6)add a feature that allows Husk to call back to previously entered data from the ~/.local/share/husk/.husk-history file ###COMPLETED Oct 18th 2022###
