@@ -17,9 +17,9 @@
 # Installation:
   
 1. Clone the repository to whichever directory you wish
-2. enter your favorite CLI 
+2. Enter your favorite CLI 
 3. In your CLI navigate to the directory that you cloned Husk to
-4. in your CLI enter: 
+4. In your CLI enter: 
 ```pip install .```
 5. Once Husk installs enter:
 ```husk``` in your CLI and boom you are now using Husk
